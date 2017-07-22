@@ -1,63 +1,10 @@
-/********************************************************************************
-
-Written by: 1) Vinod S B
-            2) Sachin B S
-            3) Rajath kumar p
-            4) Varun M S
-
-
-Programmed using CodeBlocks
-
-Gcc compiler
-
-
-Date: 24th April 2017
-
-
-This program is to create and manage the contacts of people
-
-
-Concepts covered:
-
-*) operator overloading
-*) function overloading
-*) friend function
-*) stream handling
-*) encapsulation
-*) abstraction
-*) data hiding
-*) call by address
-*) call by reference
-*) call by value
-
-
- Program description:
-
- Here we are creating two classes one for storing data like name, phone no...
- another for handling functions like storing files, displaying, editing, deleteing...
-
- In main function we are creating an object for Adressbook and acess other class
- called contact in former class.
-
-
-********************************************************************************/
-
-
-
 	#include<fstream>
 	#include<ctype.h>
 	#include<iostream>
 	#include<string.h>
 	#include<conio.h>
-
-
-
 	using namespace std;
-
-    int password=1234;
-
-
-
+	int password=1234;
 /********************************************************************************/
 
 /* class name: Contact
@@ -77,29 +24,14 @@ Concepts covered:
 		//static int password=1234;
 	public:
 
-    void setcategory(char cat[]);
-
-
+    	void setcategory(char cat[]);
 	friend istream & operator >> ( istream &in , Contact &arg);
-
-
 	friend ostream & operator << ( ostream &out , Contact &arg );
-
-
-    char *getcategory();
-
-
+	char *getcategory();
 	char * getName();
-
-
 	char getFirstLetter();
-
-
 	void store_email(int a);
-
-
 	char * getemail();
-
 	};
 
 
@@ -241,58 +173,23 @@ Concepts covered:
 	public:
 
 		void Add();
-
-
-        void selectcategory(int i, Contact &c);
-
-
+		void selectcategory(int i, Contact &c);
 		void Display();
-
-
 		void Display(char name[ ]);
-
-
 		void Display(char letter );
-
-
 		void ContextSearch( char name[ ] );
-
-
-        void category_search(char cat[ ]);
-
-
+		void category_search(char cat[ ]);
 		void del(char name[]);
-
-
 		void delall();
-
-
 		void del(int no);
-
-
 		void edit (int index);
-
-
 		void email_id(Contact &c);
-
-
-        void email_search( char mail[] );
-
-
-        void change_cat(int index);
-
-
-        void vipoption();
-
-
-        void edit_vip(int index);
-
-
-        void del_vip(int index);
-
-
-        void cat_vip(int index);
-
+		void email_search( char mail[] );
+		void change_cat(int index);
+		void vipoption();
+		void edit_vip(int index);
+		void del_vip(int index);
+		void cat_vip(int index);
 	};
 
 
