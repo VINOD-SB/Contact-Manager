@@ -7,4 +7,4 @@ The key features of contact management system are listed below:
 •	Edit contacts: edit information given while adding the contacts – name, phone number and email.
 •	Delete contacts: deletes contacts from file.
 In addition to this we can categorize contact to different fields viz., Family, Friend, Co-Worker and VIP.
-VIP is password protected and which provides contact privacy to user
+VIP is password protected and which provides contact privacy to user.
